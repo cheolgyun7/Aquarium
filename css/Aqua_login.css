@@ -1,0 +1,403 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("img/Login_index.jpg") no-repeat center;
+    background-size: cover;
+}
+
+/* font */
+
+@font-face {
+    font-family: "arial";
+    font-weight: 900;
+    src: url(../aqua_fonts/arialbd.ttf);
+}
+
+@font-face {
+    font-family: "HYFMPYUN";
+    font-weight: 400;
+    src: url(../aqua_fonts/HMFMPYUN.TTF);
+}
+
+@font-face {
+    font-family: "NanumGothic-Regular";
+    font-weight: 100;
+    src: url(../aqua_fonts/NanumGothic-Regular.ttf);
+}
+
+@font-face {
+    font-family: "NotoSansKR-Medium";
+    font-weight: 400;
+    src: url(../aqua_fonts/NotoSansKR-Medium.ttf);
+}
+
+
+/* all */
+
+body {
+    margin: 0;
+    color: #f1f1f1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* img */
+img {
+    vertical-align: top;
+    border: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+
+}
+
+.blind {
+    position: absolute;
+    top: -9999px;
+}
+
+/* clear */
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* skip_menu */
+.skip_menu a {
+    position: absolute;
+    top: -9999px;
+    display: block;
+    line-height: 50px;
+    color: white;
+    background: black;
+    text-align: center;
+}
+
+.skip_menu a:focus {
+    top: 0;
+}
+
+.wide_inner_box {
+    max-width: 1260px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.logo a {
+    color: rgb(207, 63, 63, 0.8);
+}
+
+.box {
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    background: rgba(170, 214, 255, 0.7);
+    z-index: 1000;
+}
+
+.box::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 0px;
+    background: #f1f1f1;
+    transition: 0.5s;
+}
+
+/* nav */
+nav {
+    height: 110px;
+}
+
+/* 모바일 메뉴 일단 안보이게 */
+#m_nav {
+    display: none;
+}
+
+#nav {
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+#nav li {
+    flex: 1;
+    width: 200px;
+    text-align: center;
+}
+
+#nav>li:hover>a {
+    color: #7199fe;
+}
+
+#nav>li>a {
+    font-family: "NanumGothic", sans-serif;
+    font-weight: bold;
+    line-height: 110px;
+}
+
+.logo {
+    display: inline-block;
+    text-align: center;
+    float: left;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.sub {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    z-index: 100;
+    padding-top: 15px;
+    transition: 0.5s;
+    line-height: 2.5;
+}
+
+.sub a {
+    font-size: 18px;
+    font-family: "NanumGothic", sans-serif;
+    font-weight: bold;
+    color: #111111;
+}
+
+.sub a:hover {
+    color: #7199fe;
+}
+
+/* 모바일햄버거버튼 */
+.m-ham {
+    position: absolute;
+    top: 3vw;
+    left: 4vw;
+    opacity: 0;
+}
+
+.m-ham>a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(img/m_hamb.svg);
+}
+
+.m-ham>a.closeActive {
+    background-image: url(img/m_close.svg);
+}
+
+/* 모바일 티켓 */
+.m_tic {
+    margin-right: 15px;
+    margin-top: 15px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+
+/* 메뉴호버 */
+header:hover .sub {
+    opacity: 1;
+}
+
+header:hover .box::after {
+    opacity: 0.5;
+    height: 240px;
+}
+
+
+section::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.login-form {
+    position: relative;
+    z-index: 2;
+}
+
+.login-form h1 {
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.int-area {
+    width: 400px;
+    position: relative;
+}
+
+.int-area:first-child {
+    margin-top: 0;
+}
+
+.int-area input {
+    width: 100%;
+    padding: 20px 10px 10px;
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 18px;
+    color: black;
+    outline: none;
+}
+
+.int-area label {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    font-size: 18px;
+    color: #999;
+    transition: all .5s ease;
+}
+
+.int-area label.warning {
+    color: red !important;
+    animation: warning .3s ease;
+    animation-iteration-count: 3;
+}
+
+@keyframes warning {
+    0% {
+        transform: translateX(-10px);
+    }
+
+    25% {
+        transform: translateX(10px);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
+}
+
+.int-area input:focus+label,
+.int-area input:valid+label {
+    top: 0;
+    font-size: 13px;
+    color: #166cea;
+}
+
+.btn-area {
+    margin-top: 30px;
+}
+
+.btn-area button {
+    width: 100%;
+    height: 50px;
+    background: #166cea;
+    color: whitesmoke;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.btn-area:hover button{
+    color: black;
+    background: #8da8cf;
+}
+
+.caption {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.caption a {
+    font-size: 15px;
+    color: #999;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        width: 100%;
+    }
+    #nav{
+        display: none;
+    }
+    header:hover .sub{
+        opacity: 0;
+    }
+    .headicon{
+        display: none;
+    }
+    .logo{
+        font-size: 20px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 0;
+    }
+
+    #m_nav{
+        margin-top: 60px;
+        display: block;
+        width: 70%;
+        background: #222;
+        position: absolute;
+        left: -100%;
+        transition: 1s;
+    }
+    #m_nav>li{
+        width: 100%;
+        line-height: 40px;
+        border-bottom: 1px solid #333;
+    }
+    #m_nav>li>a{
+        display: block;
+        text-indent: 20px;
+        color: white;
+    }
+    .m_sub{
+        background: #999;
+        display:none;
+    }
+    
+    .m_sub>li>a{
+        display: block;
+        text-indent: 60px;
+    }
+    .m-ham{
+        opacity: 1;
+    }
+    .m_close{
+        opacity: 1;
+    }
+    .m_tic{
+        /* background: red; */
+        opacity: 1;
+    }
+
+    .box{
+        height: 60px;
+    }
+    .box::after{
+        display: none;
+    }
+}

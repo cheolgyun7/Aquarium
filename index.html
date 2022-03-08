@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquarium</title>
+    <link rel="stylesheet" href="css/aquarium.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="shortcut icon" href="img/shorticon.png">
+    <meta property="og:imgage" content="http://cjfrbs12.dothome.co.kr/000/img/og.png">
+    <meta property="og:url" content="http://cjfrbs12.dothome.co.kr/000">
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+    <script src="jquery/slick.min.js"></script>
+    <script src="jquery/aquarium.js"></script>
+</head>
+
+<body>
+    <ul class="skip_menu">
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+    </ul>
+    <header>
+        <div class="box">
+            <div class="headicon">
+                <div class="wide_inner_box">
+                    <ul class="headicon_list clear">
+                        <li><a href="#"><img src="img/login.png" alt="로그인"></a></li>
+                        <li><a href="#"><img src="img/new.png" alt="회원가입"></a></li>
+                        <li class="lang">
+                            <a href="#"><img src="img/language.png" alt="언어"></a>
+                            <ul class="lang_list">
+                                <li><a href="#">KR</a></li>
+                                <li><a href="#">EN</a></li>
+                                <li><a href="#">CN</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wide_inner_box clear">
+                <h1 class="logo"><a href="#">LOTTE WORLD<br>AQUARIUM</a></h1>
+                <div class="m-ham">
+                    <a href="#void"></a>
+                </div>
+                <a href="Aqua_login.html" class="m_tic"><img src="img/ticket.svg" alt="내 티켓"></a>
+                <nav>
+                    <h2 class="blind">서브메뉴</h2>
+                    <ul id="nav">
+                        <li>
+                            <a href="#">아쿠아리움 소개</a>
+                            <ul class="sub">
+                                <li><a href="#">아쿠아리움 소개</a></li>
+                                <li><a href="#">뉴스 및 공지사항</a></li>
+                                <li><a href="#">층별안내</a></li>
+                                <li><a href="#">전시생물 소개</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">프로그램 및 가이드</a>
+                            <ul class="sub">
+                                <li><a href="#">프로그램 및 이벤트</a></li>
+                                <li><a href="#">아쿠아리움Talk</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">단체프로그램</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">이용안내</a>
+                            <ul class="sub">
+                                <li><a href="#">이용 안내</a></li>
+                                <li><a href="#">이용 요금</a></li>
+                                <li><a href="#">우대 정보</a></li>
+                                <li><a href="#">교통 안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">온라인 예매</a>
+                            <ul class="sub">
+                                <li><a href="#">온라인 예매</a></li>
+                                <li><a href="#">이용권 예매</a></li>
+                                <li><a href="#">층별 안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객의 소리</a>
+                            <ul class="sub">
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                                <li><a href="#">유실물 센터</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul id="m_nav">
+                        <li>
+                            <a href="#">아쿠아리움 소개</a>
+                            <ul class="m_sub">
+                                <li><a href="#">아쿠아리움 소개</a></li>
+                                <li><a href="#">뉴스 및 공지사항</a></li>
+                                <li><a href="#">층별안내</a></li>
+                                <li><a href="#">전시생물 소개</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">프로그램 및 가이드</a>
+                            <ul class="m_sub">
+                                <li><a href="#">프로그램 및 이벤트</a></li>
+                                <li><a href="#">아쿠아리움Talk</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">단체프로그램</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">이용안내</a>
+                            <ul class="m_sub">
+                                <li><a href="#">이용 안내</a></li>
+                                <li><a href="#">이용 요금</a></li>
+                                <li><a href="#">우대 정보</a></li>
+                                <li><a href="#">교통 안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">온라인 예매</a>
+                            <ul class="m_sub">
+                                <li><a href="#">온라인 예매</a></li>
+                                <li><a href="#">이용권 예매</a></li>
+                                <li><a href="#">층별 안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객의 소리</a>
+                            <ul class="m_sub">
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                                <li><a href="#">유실물 센터</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section id="container">
+        <h2 class="blind">메인비디오슬라이드</h2>
+        <div class="main_slide">
+            <!-- <div class="mainvid"><a href="#"><img src="img/img_slide01.png" alt="동영상슬라이드"></a></div> -->
+            <video id="video" autoplay  muted loop playsinline src="img/aquarium_video1.mp4"></video>
+            <div class="main_title">
+                <span class="txt_01">국내 최장 관람길이<br>650종 55,000마리 다양한 생물들</span><br>
+                <span class="txt_02">"다양한 생물들을 만나보세요"</span>
+                <div class="playing">
+                    <span class="txt_03">롯데월드 아쿠아리움</span>
+                    <p class="video1"><a href="#"><img src="img/play.png" alt="재생"></a></p>
+                    <p class="video2"><a href="#"><img src="img/pause.png" alt="일시정지"></a></p>
+                </div>
+            </div>
+            <!-- <div class="m_title">
+                <div class="m_event">
+                    <span>썸원 Likes 아쿠아리움(2인권)<br>썸원 app 유저 대상<br>대인 2인 39,000원/소인 2인 34,900원</span>
+                    <a href="#" class="m_event_pic1"><img src="img/" alt=""></a>
+                </div>
+            </div> -->
+        </div>
+        <section class="contents">
+            <h3 class="blind">섹션슬라이드</h3>
+            <section class="aqua_program">
+                <h4 class="blind">프로그램슬라이드</h4>
+                <div class="inner_box">
+                    <p class="sub_title">롯데 아쿠아리움만의 다양한 체험을 경험하세요</p>
+                    <h5 class="title">Program</h5>
+                    <ul class="program_list clear">
+                        <li>
+                            <div class="program_pic">
+                                <img src="img/rice.png" alt="메뉴1">
+                                <span>메인수조 피딩스테이션</span>
+                                <div class="bg_hover">
+                                    <div class="program_click">
+                                        <span>메인수조 피딩스테이션</span>
+                                        <img src="img/fishes.png" alt="피딩스테이션호버">
+                                        <p class="more"><a href="#">자세히보기</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- 000000 -->
+                            <div class="program_pic">
+                                <img src="img/fish_rice.png" alt="메뉴2">
+                                <span>물고기도시락</span>
+                                <div class="bg_hover">
+                                    <div class="program_click">
+                                        <span>물고기도시락</span>
+                                        <img src="img/fishrice.png" alt="물고기도시락호버">
+                                        <p class="more"><a href="#">자세히보기</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="program_pic">
+                                <img src="img/hospital222.png" alt="메뉴3">
+                                <span>해양 동물병원체험</span>
+                                <div class="bg_hover">
+                                    <div class="program_click">
+                                        <span>해양 동물병원체험</span>
+                                        <img src="img/hospital.png" alt="병원아이콘">
+                                        <p class="more"><a href="#">자세히보기</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="program_pic">
+                                <img src="img/fishhome.png" alt="메뉴4">
+                                <span>나만의 수조 만들기</span>
+                                <div class="bg_hover">
+                                    <div class="program_click">
+                                        <span>나만의 수조 만들기</span>
+                                        <img src="img/fishhouse.png" alt="수조 아이콘">
+                                        <p class="more"><a href="#">자세히보기</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="aqua_info">
+                <h4 class="blind">정보슬라이드</h4>
+                <div class="inner_box">
+                    <p class="sub_title">아쿠아리움 정보</p>
+                    <h5 class="title">Information</h5>
+                    <ul class="information_list clear">
+                        <li>
+                            <div class="info_box clear">
+                                <p class="info_title">이용 요금 및 우대정보</p>
+                                <img src="img/ticket222.png" alt="이용요금">
+                                <ul class="info_content clear">
+                                    <li>
+                                        <div class="txt01">
+                                            <span class="txt02">어른 및 청소년</span>
+                                            <span class="txt03">33,000원</span>
+                                            <span class="txt02">어린이 및 경로</span>
+                                            <span class="txt03">29,000원</span>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="txt01">
+                                            <span class="txt02">데이트 패키지</span>
+                                            <span class="txt03">매표소(42,000)원<br> 키오스크(66,000원)</span>
+                                            <span class="txt05">**츄스틱 아이스크림 증정</span>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="moreWrap">
+                                <p class="more"><a href="#">자세히보기</a></p>
+                                <p class="more2"><a href="#">더보기</a></p>
+                            </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info_box">
+                                <p class="info_title">먹이주는시간</p>
+                                <img src="img/pic1.png" alt="먹이">
+                                <ul class="info_content clear">
+                                    <li>
+                                        <div class="txt01">
+                                            <span class="txt02">평일(월~금)</span>
+                                            <span class="txt04">먹이주기</span>
+                                            <span class="txt03">10:30~12:00</span>
+                                            <span class="txt04">생태설명회</span>
+                                            <span class="txt03">12:30~15:30</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="txt01">
+                                            <span class="txt02">주말(토~일)</span>
+                                            <span class="txt04">먹이주기</span>
+                                            <span class="txt03">11:00~13:00</span>
+                                            <span class="txt04">생태설명회</span>
+                                            <span class="txt03">13:00~14:30</span>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                                <div class="moreWrap">
+                                <p class="more">
+                                    <a href="#">자세히보기</a>
+                                </p></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info_box">
+                                <p class="info_title">단체 프로그램 안내</p>
+                                <img src="img/pic222.png" alt="단체프로그램">
+                                <ul class="info_content clear">
+                                    <li>
+                                        <div class="txt01">
+                                            <!-- 000 -->
+                                            <span class="txt02">아쿠아리움 현장학습</span>
+                                            <span class="txt04">대상:유아,초등학생<br>구성:해설(40분)</span>
+                                            <span class="txt02">초,중,고 DREAM UP</span>
+                                            <span class="txt04">대상:초,중,고등학생<br>구성:직업소개(25분)+후방투어(25분)</span>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                                <div class="moreWrap">
+                                <p class="more2">
+                                    <a href="#">더보기</a>
+                                </p>
+                            </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="info_btn">
+                        <li><a href="#void"></a></li>
+                        <li><a href="#void"></a></li>
+                        <li><a href="#void"></a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="aqua_message">
+                <h4 class="blind">메세지슬라이드</h4>
+                <div class="inner_box">
+                    <p class="sub_title">체험과 아쿠아리움 기념품</p>
+                    <h5 class="title">Message</h5>
+                    <ul class="message_list clear">
+                        <li>
+                            <div class="message_box">
+                                <img src="img/notice.png" alt="상어"><br>
+                                <span class="m_title">공지사항</span><br>
+                                <span class="sub_title">아쿠아리움의 다양한정보!!!</span>
+                                <p class="more"><a href="#">자세히보기</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="message_box">
+                                <img src="img/fishes.png" alt="수조체험"><br>
+                                <span class="m_title">메인 수조체험</span><br>
+                                <span class="sub_title">특별한 수조체험의 기억을 남기세요!</span>
+                                <p class="more"><a href="#">자세히보기</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="message_box">
+                                <img src="img/present.png" alt="선물"><br>
+                                <span class="m_title">기념상품</span><br>
+                                <span class="sub_title">다양한 기념품을 구경하세요!!</span>
+                                <p class="more"><a href="#">자세히보기</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </section>
+    <footer>
+        <div class="footer_box clear">
+            <p class="foot_logo"><a href="#"><img src="img/lotteworld_footer_logo.png" alt="로고"></a></p>
+            <div class="foot_info">
+                <ul class="foot_util clear">
+                    <li><a href="#">아쿠아리움 소개</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">영상정보운영 및 관리 방침</a></li>
+                    <li><a href="#">주소 및 회사소개</a></li>
+                </ul>
+            </div>
+            <ul class="sns clear">
+                <li><a href="#"><img src="img/facebook.png" alt="페북"></a></li>
+                <li><a href="#"><img src="img/instagram.png" alt="인스타"></a></li>
+            </ul>
+            <div class="familysite">
+                <select name="관련사이트 바로가기">
+                    <option value="familysite">패밀리 관련 사이트</option>
+                    <option value="lotteworld">롯데월드</option>
+                    <option value="김해 롯데워터파크">김해 롯데워터파크</option>
+                    <option value="seoul sky">Seoul City</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Aqua_login.css">
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+    <script src="jquery/aquarium.js"></script>
+    <script>
+        // $(function () {
+        //     $("#HEADER").load("new.html");
+        // })
+        let id = $('#id');
+        let pw = $('#pw');
+        let btn = $('#btn');
+
+        $(btn).on("click", function () {
+            if ($(id).val() == "") {
+                $(id).next('label').addClass('warning');
+                setTimeout(function () {
+                    $("label").removeClass('warning');
+                }, 1500);
+            } else if ($(pw).val() == "") {
+                $(pw).next('label').addClass('warning');
+                setTimeout(function () {
+                    $("label").removeClass('warning');
+                }, 1500);
+            }
+        });
+       
+
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="box">
+    
+            <div class="wide_inner_box clear">
+                <h1 class="logo"><a href="index.html">LOTTE WORLD<br>AQUARIUM</a></h1>
+                <div class="m-ham">
+                    <a href="#void"></a>
+                </div>
+                <a href="Aqua_login.html" class="m_tic"><img src="img/ticket.svg" alt="내 티켓"></a>
+                <nav>
+                    <h2 class="blind">서브메뉴</h2>
+                    <ul id="nav">
+                        <li>
+                            <a href="#">아쿠아리움 소개</a>
+                            <ul class="sub">
+                                <li><a href="#">아쿠아리움 소개</a></li>
+                                <li><a href="#">뉴스 및 공지사항</a></li>
+                                <li><a href="#">층별안내</a></li>
+                                <li><a href="#">전시생물 소개</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">프로그램 및 가이드</a>
+                            <ul class="sub">
+                                <li><a href="#">프로그램 및 이벤트</a></li>
+                                <li><a href="#">아쿠아리움Talk</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">단체프로그램</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">이용안내</a>
+                            <ul class="sub">
+                                <li><a href="#">이용 안내</a></li>
+                                <li><a href="#">이용 요금</a></li>
+                                <li><a href="#">우대 정보</a></li>
+                                <li><a href="#">교통 안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">온라인 예매</a>
+                            <ul class="sub">
+                                <li><a href="#">온라인 예매</a></li>
+                                <li><a href="#">이용권 예매</a></li>
+                                <li><a href="#">층별 안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객의 소리</a>
+                            <ul class="sub">
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                                <li><a href="#">유실물 센터</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul id="m_nav">
+                        <li>
+                            <a href="#">아쿠아리움 소개</a>
+                            <ul class="m_sub">
+                                <li><a href="#">아쿠아리움 소개</a></li>
+                                <li><a href="#">뉴스 및 공지사항</a></li>
+                                <li><a href="#">층별안내</a></li>
+                                <li><a href="#">전시생물 소개</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">프로그램 및 가이드</a>
+                            <ul class="m_sub">
+                                <li><a href="#">프로그램 및 이벤트</a></li>
+                                <li><a href="#">아쿠아리움Talk</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">단체프로그램</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">이용안내</a>
+                            <ul class="m_sub">
+                                <li><a href="#">이용 안내</a></li>
+                                <li><a href="#">이용 요금</a></li>
+                                <li><a href="#">우대 정보</a></li>
+                                <li><a href="#">교통 안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">온라인 예매</a>
+                            <ul class="m_sub">
+                                <li><a href="#">온라인 예매</a></li>
+                                <li><a href="#">이용권 예매</a></li>
+                                <li><a href="#">층별 안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객의 소리</a>
+                            <ul class="m_sub">
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                                <li><a href="#">유실물 센터</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="login-form">
+            <h1>로그인</h1>
+            <form action="">
+                <div class="int-area">
+                    <input type="text" name="id" id="id" autocomplete="off" required>
+                    <label for="id">아이디를 입력하세요</label>
+                </div>
+                <div class="int-area">
+                    <input type="password" name="pw" id="pw" autocomplete="off" required>
+                    <label for="pw">비밀번호를 입력하세요</label>
+                </div>
+                <div class="btn-area">
+                    <button type="submit">로그인</button>
+                </div>
+            </form>
+            <div class="caption">
+                <a href="">비밀번호를 잊어버리셨습니까?</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
